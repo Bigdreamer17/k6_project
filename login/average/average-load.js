@@ -9,11 +9,11 @@ export const options = {
     { duration: '20s', target: 0 }, // ramp-down to 0 users
   ],
 };
-
+// provide your website, username and password if the website requires one
 export default function () {
-  const loginRes = http.post('http://magnum-api.com/auth/login', JSON.stringify({
-    username: 'hans',
-    password: 'Hans123'
+  const loginRes = http.post('Website', JSON.stringify({
+    username: 'username',
+    password: 'password'
   }),{
       headers: { 'Content-Type': 'application/json' } 
     });

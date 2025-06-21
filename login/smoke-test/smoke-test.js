@@ -4,11 +4,11 @@ export const options = {
   vus: 30,
   duration: '15s',
 };
-
+// Dont forget to replace website, username, password
 export default function () {
-  const loginRes = http.post('http://magnum-api.com/auth/login', JSON.stringify({
-    username: 'hans',
-    password: 'Hans123'
+  const loginRes = http.post('Website', JSON.stringify({
+    username: 'username',
+    password: 'password'
   }),{
       headers: { 'Content-Type': 'application/json' },
     });
